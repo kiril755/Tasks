@@ -1,0 +1,143 @@
+.header {
+  background-color: #f7f7f7;
+}
+
+.header__wrap {
+  margin: auto;
+  width: 960px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+.header__logo-link {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo-img {
+  width: 190px;
+}
+.header__logo-arrow {
+  background-color: inherit;
+}
+.header__logo-arrow-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.header__social-wrap {
+  display: flex;
+}
+.header__icon-list {
+  display: flex;
+}
+.header__icon-item {
+  width: 34px;
+  height: 16px;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.header__icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.icon {
+  width: 24px;
+  height: 21px;
+}
+
+.message {
+  display: flex;
+  height: 70px;
+  align-items: center;
+
+  padding: 0 11px;
+}
+
+.header__change-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px solid #e5e5e5;
+}
+
+.header__message-icon {
+  width: 24px;
+}
+
+.theme {
+  padding: 0 15px;
+}
+
+.search {
+  padding-left: 15px;
+}
+
+//////// nav
+
+.nav {
+  background-color: #2f7a91;
+  margin: 0 auto;
+
+  height: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  width: 1010px;
+
+  height: 100%;
+  border-left: 1px solid #959191;
+  border-right: 1px solid #959191;
+  color: #fff;
+}
+
+.nav__item {
+  font-size: 14px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:first-child {
+    padding-right: 40px;
+  }
+
+  &:not(:first-child):not(:last-child)a::after {
+    padding-right: 45px;
+    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M9.694 9.939l2.556 2.556 2.556-2.556 0.783 0.783-3.339 3.339-3.339-3.339z' fill='white' /></svg>");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+}
